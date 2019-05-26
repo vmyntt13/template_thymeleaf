@@ -1,6 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-
 <html xmlns="http://www.w3.org/1999/xhtml" 
     xmlns:th="http://www.thymeleaf.org" 
     xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
@@ -15,23 +12,10 @@
     The time on the server is <label th:text="${serverTime}"></label>
 </p>
 
-<!--<td>-->
-<!--    <span th:if="${student.gender} == 'M'" th:text="Male" />-->
-<!--    <span th:unless="${student.a} == 'M'" th:text="Female" />-->
-<!--</td>-->
-
 <td>
     <span th:text="${student?.gender}" >James</span>
     <span th:text="${student?.name}" >Lily</span>
 </td>
-
-<!--<tbody>-->
-<!--<tr th:each="student: ${students}">-->
-<!--    <td id="abc" name="abc" th:text="${student.name}" />-->
-<!--    <td th:text="${student.gender}" />-->
-
-<!--</tr>-->c
-<!--</tbody>-->
 
 <tbody>
 <b>

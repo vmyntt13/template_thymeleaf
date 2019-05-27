@@ -17,10 +17,6 @@
     <span th:text="${student?.name}" >Lily</span>
 </td>
 
-<tbody>
-<b><td th:text="${student?.gender}">${student.gender}</td></b>
-</tr>
-</tbody>
 
 <p>Xin chao2222</p>
 </body>

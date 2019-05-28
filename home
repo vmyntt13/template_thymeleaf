@@ -7,7 +7,7 @@
 </head>
 <body>
 <th:block th:include="https://raw.githubusercontent.com/nttramy400/template_thymeleaf/master/menu.html"></th:block>
-<h1>Hello world11111111</h1>
+<h1>Hello world222222</h1>
 
 <p>
     The time on the server is <label th:text="${serverTime}"></label>

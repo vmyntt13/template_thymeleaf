@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <style>
         body{
-            width: 18cm;
+            /*width: 18cm;*/
             font-family: Arial, Helvetica, sans-serif;
             margin: 0 auto;
         }
@@ -23,80 +23,86 @@
 </head>
 <body>
 <div class="body">
-<div style="text-align: center;">
-    <div><img style="height: 2cm" src="https://i.pinimg.com/originals/6b/17/91/6b1791e9e647dc785cd8b682a78394d5.png"
-                           alt="Logo"/></div>
-    <h1 style="background-color: green;color: white; padding-top: 0.5cm;padding-bottom: 0.5cm">REGISTRATION CARD</h1>
+    <div style="text-align: center;">
+        <div><img style="height: 2cm" src="https://i.pinimg.com/originals/6b/17/91/6b1791e9e647dc785cd8b682a78394d5.png"
+                  alt="Logo"/></div>
+        <h1 style="background-color: green;color: white; padding-top: 0.5cm;padding-bottom: 0.5cm">REGISTRATION CARD</h1>
 
-    <div style="color: grey"><span th:text="${propertyPhone}">${propertyPhone}</span><br/>
-    <span th:text="${propertyName}">${propertyName}</span><br/>
-    <span th:text="${propertyAddress}">${propertyAddress}</span><br/></div>
-</div>
+        <div style="color: grey"><span th:text="${propertyPhone}">${propertyPhone}</span><br/>
+            <span th:text="${propertyName}">${propertyName}</span><br/>
+            <span th:text="${propertyAddress}">${propertyAddress}</span><br/></div>
+    </div>
     <div><p><b>Dear guest,</b><br/>We would like to thank you for choosing our hotel as your accommodation. We hope you enjoy your stay! Here is some information about your trip.</p></div>
-<div><h3>Guest Info</h3>
-<table style="width:100%">
-    <tr>
-        <td>Full name</td>
-        <td th:text="${fullName}">${fullName}</td>
-    </tr>
-    <tr>
-        <td>Phone</td>
-        <td th:text="${phone}">${phone}</td>
-    </tr>
-    <tr>
-        <td>ID/Passport number</td>
-        <td th:text="${idCard}">${idCard}</td>
-    </tr>
-    <tr>
-        <td>Country</td>
-        <td th:text="${country}">${country}</td>
-    </tr>
-</table></div>
+    <div><h3>Guest Info</h3>
+        <table style="width:100%">
+            <tr>
+                <td>Full name</td>
+                <td th:text="${fullName}">${fullName}</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td th:text="${phone}">${phone}</td>
+            </tr>
+            <tr>
+                <td>ID/Passport number</td>
+                <td th:text="${idCard}">${idCard}</td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td th:text="${country}">${country}</td>
+            </tr>
+        </table></div>
 
-<div><h3 style="margin-top: 1cm">Booking Info</h3>
-<table style="width:100%">
-    <tr>
-        <td>Reservation ID</td>
-        <td th:text="${reservationID}">${reservationID}</td>
-    </tr>
-    <tr>
-        <td>Confirmation Number</td>
-        <td th:text="${confirmationNumber}">${confirmationNumber}</td>
-    </tr>
-    <tr>
-        <td>Itinerary Number</td>
-        <td th:text="${itineraryNumber}">${itineraryNumber}</td>
-    </tr>
-    <tr>
-        <td>Arrival date</td>
-        <td th:text="${arrivalDate}">${arrivalDate}</td>
-    </tr>
-    <tr>
-        <td>Departure date</td>
-        <td th:text="${departureDate}">${departureDate}</td>
-    </tr>
-    <tr>
-        <td>Room number</td>
-        <td th:text="${roomNumber}">${roomNumber}</td>
-    </tr>
-    <tr>
-        <td>Room type</td>
-        <td th:text="${roomTypeName}">${roomTypeName}</td>
-    </tr>
-    <tr>
-        <td>Number of guests</td>
-        <td th:text="${numberOfGuests}">${numberOfGuests}</td>
-    </tr>
-    <tr>
-        <td>Number of nights</td>
-        <td th:text="${numberOfNights}">${numberOfNights}</td>
-    </tr>
-</table></div>
+    <div><h3 style="margin-top: 1cm">Booking Info</h3>
+        <table style="width:100%">
+            <tr>
+                <td>Reservation ID</td>
+                <td th:text="${reservationID}">${reservationID}</td>
+            </tr>
+            <tr>
+                <td>Confirmation Number</td>
+                <td th:text="${confirmationNumber}">${confirmationNumber}</td>
+            </tr>
+            <tr>
+                <td>Itinerary Number</td>
+                <td th:text="${itineraryNumber}">${itineraryNumber}</td>
+            </tr>
+            <tr>
+                <td>Arrival date</td>
+                <td th:text="${arrivalDate}">${arrivalDate}</td>
+            </tr>
+            <tr>
+                <td>Departure date</td>
+                <td th:text="${departureDate}">${departureDate}</td>
+            </tr>
+            <tr>
+                <td>Room number</td>
+                <td th:text="${roomNumber}">${roomNumber}</td>
+            </tr>
+            <tr>
+                <td>Room type</td>
+                <td th:text="${roomTypeName}">${roomTypeName}</td>
+            </tr>
+            <tr>
+                <td>Number of guests</td>
+                <td th:text="${numberOfGuests}">${numberOfGuests}</td>
+            </tr>
+            <tr>
+                <td>Number of nights</td>
+                <td th:text="${numberOfNights}">${numberOfNights}</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td th:text="${total}">${total}</td>
+            </tr>
+            <tr>
+                <td>Deposit</td>
+                <td th:text="${deposit}">${deposit}</td>
+            </tr>
+        </table></div>
     <div style="margin-top: 1cm">
         <h3>Policy Information</h3><p>The hotel check in time is 4:00pm and check out time is 12:00pm<br/>
         The hotel assumes no responsibility for loss of valuables from the room and I agree to vacate the room by the time indicated. I agree that my liability for this bill is not waived and I agree to be held personally liable in the event that the indicated person, company, or association fails to pay the full amount of these charges.<br/></p></div>
-    <img style="height: 5cm" src="https://qph.fs.quoracdn.net/main-qimg-2248bdd01f82b9fb9becdc4bd9a92c53"
-         alt="Signature"/>
     <img style="height: 5cm" th:src="${linkSignatureImg}" alt="Signature"/>
 </div>
 </body>

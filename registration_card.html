@@ -7,9 +7,9 @@
             /*width: 18cm;*/
             font-family: Arial, Helvetica, sans-serif;
             margin: 0 auto;
+            font-size: 10px;
         }
         .body{width:100%;}
-
         table, th, td {
             border: 1px solid black;
             padding: 0.1cm;
@@ -24,9 +24,9 @@
 <body>
 <div class="body">
     <div style="text-align: center;">
-        <div><img style="height: 2cm" src="https://i.pinimg.com/originals/6b/17/91/6b1791e9e647dc785cd8b682a78394d5.png"
+        <div><img style="height: 1cm" src="https://i.pinimg.com/originals/6b/17/91/6b1791e9e647dc785cd8b682a78394d5.png"
                   alt="Logo"/></div>
-        <h1 style="background-color: green;color: white; padding-top: 0.5cm;padding-bottom: 0.5cm">REGISTRATION CARD</h1>
+        <h2 style="background-color: green;color: white; padding-top: 5px;padding-bottom: 5px">REGISTRATION CARD</h2>
 
         <div style="color: grey"><span th:text="${propertyPhone}">${propertyPhone}</span><br/>
             <span th:text="${propertyName}">${propertyName}</span><br/>
@@ -53,7 +53,7 @@
             </tr>
         </table></div>
 
-    <div><h3 style="margin-top: 1cm">Booking Info</h3>
+    <div><h3 style="margin-top: 0.5cm">Booking Info</h3>
         <table style="width:100%">
             <tr>
                 <td>Confirmation Number</td>
@@ -96,10 +96,10 @@
                 <td th:text="${deposit}">${deposit}</td>
             </tr>
         </table></div>
-    <div style="margin-top: 1cm">
+    <div style="margin-top: 0.5cm">
         <h3>Policy Information</h3><p>The hotel check in time is 4:00pm and check out time is 12:00pm<br/>
         The hotel assumes no responsibility for loss of valuables from the room and I agree to vacate the room by the time indicated. I agree that my liability for this bill is not waived and I agree to be held personally liable in the event that the indicated person, company, or association fails to pay the full amount of these charges.<br/></p></div>
-    <img style="width: 50%" th:src="${linkSignatureImg}" alt="Signature"/>
+    <img style="height: 2.5cm" th:src="${linkSignatureImg}" alt="Signature"/>
 </div>
 </body>
 </html>

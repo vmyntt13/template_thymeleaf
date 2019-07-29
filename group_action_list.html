@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<span th:text="${itineraryNo}">${itineraryNo}</span><br/>
+<span th:text="${tourGuide}">${tourGuide}</span><br/>
+<span th:text="${email}">${email}</span><br/>
+<span th:text="${company}">${company}</span><br/>
+<span th:text="${packageName}">${packageName}</span><br/>
+<span th:text="${arrivalDate}">${arrivalDate}</span><br/>
+<span th:text="${departureDate}">${departureDate}</span><br/>
+<span th:text="${eta}">${eta}</span><br/>
+<span th:text="${numOfRoom}">${numOfRoom}</span><br/>
+<span th:text="${totalRoomType}">${totalRoomType}</span><br/>
+<table>
+    <tr>
+        <th>RoomType</th>
+        <th>Room</th>
+        <th>Special Request</th>
+    </tr>
+    <th:block th:each="room : ${rooms}">
+        <tr>
+            <td th:text="${room.roomType}">${room.roomType}</td>
+            <td th:text="${room.roomNum}">${room.roomNum}</td>
+            <td th:text="${room.specialRequest}">${room.specialRequest}</td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

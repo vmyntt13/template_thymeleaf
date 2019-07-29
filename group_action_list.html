@@ -31,19 +31,5 @@
 <span th:text="${eta}">${eta}</span><br/>
 <span th:text="${numOfRoom}">${numOfRoom}</span><br/>
 <span th:text="${totalRoomType}">${totalRoomType}</span><br/>
-<table>
-    <tr>
-        <th>RoomType</th>
-        <th>Room</th>
-        <th>Special Request</th>
-    </tr>
-    <th:block th:each="room : ${rooms}">
-        <tr>
-            <td th:text="${room.roomType}">${room.roomType}</td>
-            <td th:text="${room.roomNum}">${room.roomNum}</td>
-            <td th:text="${room.specialRequest}">${room.specialRequest}</td>
-        </tr>
-    </th:block>
-</table>
 </body>
 </html>

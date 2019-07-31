@@ -1,279 +1,251 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>GROUP REGISTRATION FORM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-      img.logo {
-          height: 150px;
-      }
-      
-      h1 {
-        width: 100%;
-        text-align: center;
-        padding: 30px 0;
-        margin-top: 0px;
-        font-size: 36px;
-        color: #4e4e4e;
-        font-weight: 550;
-      }
-
-      .container {
-        width: 1024px;
-        margin: 0 auto;
-        color: #4e4e4e;
-        font-family: sans-serif;
-      }
-
-      .confirmation {
-        padding-bottom: 20px;
-      }
-
-      span.sub {
-          color: #919699;
-      }
-
-      span.no {
-          color: #333;
-          font-size: 24px;
-          margin-left: 10px;
-      }
-
-      .label1 {
-        width:20%;
-        padding-bottom: 30px;
-      }
-
-      .label1 .sub {
-          padding-top: 5px;
-          font-size: 14px;
-          color: #919699;
-      }
-
-      .text1 {
-        width:30%;
-        padding-bottom: 30px;
-      }
-
-      .text1  div {
-        border-bottom:dashed 1px #dee0e0;
-        margin-right: 40px;
-        padding-bottom: 10px;
-        color: black;
-      }
-
-      table {
-          width: 100%;
-      }
-
-      .note {
-          padding-bottom: 30px;
-          line-height: 28px;
-      }
-
-      .checkbox {
-          padding: 40px 0;
-          font-weight: 500;
-          display: -webkit-flex;
-          align-items: flex-end
-      }
-      
-      .checkbox div {
-        padding-bottom: 10px
-      }
-
-      input[type=checkbox] {
-        zoom: 2;
-        margin-right: 10px;
-        border: solid 1px red;
-      }
-
-      td.sign {
-          width: 30%;
-      }
-
-      td.sign:first-child {
-        width: 39%;
+    <meta charset="utf-8">
+    <title>GROUP REGISTRATION FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img.logo {
+            height: 150px;
         }
 
-      td.sign2 {
+        h1 {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 0px;
+            font-size: 36px;
+            color: #4e4e4e;
+            font-weight: 550;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            color: #4e4e4e;
+            font-family: sans-serif;
+        }
+
+        .confirmation {
+            padding-bottom: 20px;
+        }
+
+        span.sub {
+            color: #919699;
+        }
+
+        span.no {
+            color: #333;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .label1 {
+            width:20%;
+            padding-bottom: 30px;
+        }
+
+        .label1 .sub {
+            padding-top: 5px;
             font-size: 14px;
             color: #919699;
-      }
+        }
 
-      .date {
-          margin-top: 150px;
-          margin-bottom: 50px;
-      }
+        .text1 {
+            width:30%;
+            padding-bottom: 30px;
+        }
 
-      .date .border {
-        border-bottom:dashed 1px #dee0e0;
-        height: 20px;
-        margin-left: 10px;
-        padding: 0 100px;
-      }
+        .text1  div {
+            border-bottom:dashed 1px #dee0e0;
+            margin-right: 40px;
+            padding-bottom: 10px;
+            color: black;
+        }
 
-      table.report {
-        border-bottom: solid 3px #dad6d6;
-      }
+        table {
+            width: 100%;
+        }
 
-      table.report th {
-          border-top: solid 3px #dad6d6;
-          border-bottom: solid 3px #dad6d6;
-          padding: 20px 0;
-          border-right: dashed 1px #dad6d6;
-      }
+        .note {
+            padding-bottom: 30px;
+            line-height: 28px;
+        }
 
-      table.report th.no {
-        width: 6;
-        text-align: center;
-      }
+        .checkbox {
+            padding: 40px 0;
+            font-weight: 500;
+            display: -webkit-flex;
+            align-items: flex-end
+        }
 
-      table.report th.rtype {
-        width: 8%;
-        text-align: center;
-    }
+        .checkbox div {
+            padding-bottom: 10px
+        }
 
-    table.report th.room {
-        width: 8%;
-        text-align: center;
-    }
+        input[type=checkbox] {
+            zoom: 2;
+            margin-right: 10px;
+            border: solid 1px red;
+        }
 
-      table.report td {
-        border: dashed 1px #dad6d6;
-        border-top: none;
-        border-left: none;
-        padding: 20px 0;
-        text-align: center;
-        height: 20px;
-      }
+        td.sign {
+            width: 30%;
+        }
 
-      table.report td:nth-child(4n) {
-        text-align: left;
-        padding-left: 20px;
-      }
+        td.sign:first-child {
+            width: 39%;
+        }
 
-      table.report tr:last-child td {
-        border-bottom: none;
-      }
+        td.sign2 {
+            font-size: 14px;
+            color: #919699;
+        }
 
-      table.report td:first-child, table.report th:first-child {
-        border-left: dashed 1px #dad6d6;
-      }
-  </style>
+        .date {
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+
+        .date .border {
+            border-bottom:dashed 1px #dee0e0;
+            height: 20px;
+            margin-left: 10px;
+            padding: 0 100px;
+        }
+
+        table.report {
+            border-bottom: solid 3px #dad6d6;
+        }
+
+        table.report th {
+            border-top: solid 3px #dad6d6;
+            border-bottom: solid 3px #dad6d6;
+            padding: 20px 0;
+            border-right: dashed 1px #dad6d6;
+        }
+
+        table.report th.no {
+            width: 6;
+            text-align: center;
+        }
+
+        table.report th.rtype {
+            width: 8%;
+            text-align: center;
+        }
+
+        table.report th.room {
+            width: 8%;
+            text-align: center;
+        }
+
+        table.report td {
+            border: dashed 1px #dad6d6;
+            border-top: none;
+            border-left: none;
+            padding: 20px 0;
+            text-align: center;
+            height: 20px;
+        }
+
+        table.report td:nth-child(4n) {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        table.report tr:last-child td {
+            border-bottom: none;
+        }
+
+        table.report td:first-child, table.report th:first-child {
+            border-left: dashed 1px #dad6d6;
+        }
+    </style>
 </head>
 <body>
-    <center><img src="./logo.png" class="logo" /></center>
-    <h1>GROUP ACTION LIST</h1>
-    <div class="container">
-        <div class="confirmation">Itinerary / <span class="sub">Mã hành trình</span>: <span class="no" th:text="${itineraryNo}">${itineraryNo}</span></div>
-        <table cellspacing="1" cellpadding="1">
-            <tr>
-                <td class="label1">Tour guider/Leader <div class="sub">Họ và Tên Trưởng nhóm</div></td>
-                <td class="text1"><div th:text="${tourGuide}">${tourGuide}</div></td>
-                <td class="label1">Arrival Date <div class="sub">Ngày đến</div></td>
-                <td class="text1"><div th:text="${arrivalDate}">${arrivalDate}</div></td>
-            </tr>
-            <tr>
-                <td class="label1">Contact No <div class="sub">Số điện thoại</div></td>
-                <td class="text1"><div th:text="${contactNo}">${contactNo}</div></td>
-                <td class="label1">Departure Date <div class="sub">Ngày đi</div></td>
-                <td class="text1"><div th:text="${departureDate}">${departureDate}</div></td>
-            </tr>
-            <tr>
-                <td class="label1">Email Address <div class="sub">Địa chỉ mail</div></td>
-                <td class="text1"><div th:text="${email}">${email}</div></td>
-                <td class="label1">ETA <div class="sub">Giờ đến dự kiến</div></td>
-                <td class="text1"><div></div></td>
-            </tr>
-            <tr>
-                <td class="label1">Comnpany/TA <div class="sub">Công ty</div></td>
-                <td class="text1"><div th:text="${company}">${company}</div></td>
-                <td class="label1">No. of Room<div class="sub">Số lượng phòng</div></td>
-                <td class="text1"><div th:text="${numOfRoom}">${numOfRoom}</div></td>
-            </tr>
-            <tr>
-                <td class="label1">Package<div class="sub">Giá phòng</div></td>
-                <td class="text1"><div th:text="${packageName}">${packageName}</div></td>
-                <td class="label1">Total Room Type<div class="sub">Tổng số phòng theo loại</div></td>
-                <td class="text1"><div th:text="${totalRoomType}">${totalRoomType}</div></td>
-            </tr>
-        </table>
-        <table class="report" cellpadding="0" cellspacing="0">
-            <tr>
-                <th class="no">No.</th>
-                <th class="rtype">R.Type</th>
-                <th class="room">Room</th>
-                <th>Special Request</th>
-                <th class="no">No.</th>
-                <th class="rtype">R.Type</th>
-                <th class="room">Room</th>
-                <th>Special Request</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>KDNH</td>
-                <td>4506</td>
-                <td>Extra Bed</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>KDNH</td>
-                <td>4507</td>
-                <td>Smooking Room</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>KDNH</td>
-                <td>4508</td>
-                <td>Connecting Room</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        </table>
-        <div class="checkbox">
-            <input type="checkbox" /> <div>BY CHECKING ON THIS BOX</div>
-        </div>
-        <div class="note">
-                Đồ đạc trong phòng được trang bị theo phong cách hiện đại có những nét riêng của Việt Nam, 
-                khung cảnh ngoạn mục từ phòng và ban công riêng. Với một không gian 54m2 rộng rãi, 
-                bạn có thể thức dậy vào lúc mặt trời mọc trên mặt nước lấp lánh và tận hưởng làn gió biển dịu mát.
-        </div>
-        <table>
-            <tr>
-                <td class="sign">Guest Signature</td>
-                <td class="sign">GSA</td>
-                <td class="sign">Checked By</td>
-            </tr>
-            <tr>
-                <td class="sign2">Chữ ký của khách</td>
-                <td class="sign2">Lễ tân</td>
-                <td class="sign2">Giám sát</td>
-            </tr>
-        </table>
-        <div class="date">
-            Date / <span class="sub">Ngày</span>
-            <span class="border"></span>
-        </div>
+<center><img src="./logo.png" class="logo" /></center>
+<h1>GROUP ACTION LIST</h1>
+<div class="container">
+    <div class="confirmation">Itinerary / <span class="sub">Mã hành trình</span>: <span class="no">3852</span></div>
+    <table cellspacing="1" cellpadding="1">
+        <tr>
+            <td class="label1">Tour guider/Leader <div class="sub">Họ và Tên Trưởng nhóm</div></td>
+            <td class="text1"><div>tourGuide</div></td>
+            <td class="label1">Arrival Date <div class="sub">Ngày đến</div></td>
+            <td class="text1"><div>25.07.2019</div></td>
+        </tr>
+        <tr>
+            <td class="label1">Contact No <div class="sub">Số điện thoại</div></td>
+            <td class="text1"><div></div></td>
+            <td class="label1">Departure Date <div class="sub">Ngày đi</div></td>
+            <td class="text1"><div>26.07.2019</div></td>
+        </tr>
+        <tr>
+            <td class="label1">Email Address <div class="sub">Địa chỉ mail</div></td>
+            <td class="text1"><div>email</div></td>
+            <td class="label1">ETA <div class="sub">Giờ đến dự kiến</div></td>
+            <td class="text1"><div></div></td>
+        </tr>
+        <tr>
+            <td class="label1">Comnpany/TA <div class="sub">Công ty</div></td>
+            <td class="text1"><div>company</div></td>
+            <td class="label1">No. of Room<div class="sub">Số lượng phòng</div></td>
+            <td class="text1"><div>3</div></td>
+        </tr>
+        <tr>
+            <td class="label1">Package<div class="sub">Giá phòng</div></td>
+            <td class="text1"><div>packageName</div></td>
+            <td class="label1">Total Room Type<div class="sub">Tổng số phòng theo loại</div></td>
+            <td class="text1"><div>type2-1, type1-2</div></td>
+        </tr>
+    </table>
+    <table class="report" cellpadding="0" cellspacing="0">
+        <tr>
+            <th class="no">No.</th>
+            <th class="rtype">R.Type</th>
+            <th class="room">Room</th>
+            <th>Special Request</th>
+            <th class="no">No.</th>
+            <th class="rtype">R.Type</th>
+            <th class="room">Room</th>
+            <th>Special Request</th>
+        </tr>
+        <tr th:each="room: ${rooms}">
+            <td>1</td>
+            <td th:text="${room?.roomType}" />
+            <td th:text="${room?.roomNum}" />
+            <td th:text="${room?.specialRequest}" />
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="checkbox">
+        <input type="checkbox" /> <div>BY CHECKING ON THIS BOX</div>
     </div>
+    <div class="note">
+        Đồ đạc trong phòng được trang bị theo phong cách hiện đại có những nét riêng của Việt Nam,
+        khung cảnh ngoạn mục từ phòng và ban công riêng. Với một không gian 54m2 rộng rãi,
+        bạn có thể thức dậy vào lúc mặt trời mọc trên mặt nước lấp lánh và tận hưởng làn gió biển dịu mát.
+    </div>
+    <table>
+        <tr>
+            <td class="sign">Guest Signature</td>
+            <td class="sign">GSA</td>
+            <td class="sign">Checked By</td>
+        </tr>
+        <tr>
+            <td class="sign2">Chữ ký của khách</td>
+            <td class="sign2">Lễ tân</td>
+            <td class="sign2">Giám sát</td>
+        </tr>
+    </table>
+    <div class="date">
+        Date / <span class="sub">Ngày</span>
+        <span class="border"></span>
+    </div>
+</div>
 </body>
 </html>

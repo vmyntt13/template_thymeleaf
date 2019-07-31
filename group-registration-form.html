@@ -211,19 +211,15 @@
             <th class="room">Room</th>
             <th>Special Request</th>
         </tr>
-        <tr>
-            <div th:each="room: ${roomsLeftCol}">
-                <td th:text="${room?.no}">"${room?.no}</td>
-                <td th:text="${room?.roomType}">"${room?.no}</td>
-                <td th:text="${room?.roomNum}">"${room?.no}</td>
-                <td th:text="${room?.specialRequest}">"${room?.no}</td>
-            </div>
-            <div th:each="room: ${roomsRightCol}">
-                <td th:text="${room?.no}">"${room?.no}</td>
-                <td th:text="${room?.roomType}">"${room?.no}</td>
-                <td th:text="${room?.roomNum}">"${room?.no}</td>
-                <td th:text="${room?.specialRequest}">"${room?.no}</td>
-            </div>
+        <tr th:each="room: ${rooms}">
+            <td th:text="${room?.no}">${room?.no}</td>
+            <td th:text="${room?.roomType}">{room?.roomType}</td>
+            <td th:text="${room?.roomNum}">{room?.roomNum}</td>
+            <td th:text="${room?.specialRequest}">{room?.specialRequest}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
     <div class="checkbox">

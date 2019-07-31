@@ -167,37 +167,37 @@
     <center><img src="./logo.png" class="logo" /></center>
     <h1>GROUP ACTION LIST</h1>
     <div class="container">
-        <div class="confirmation">Itinerary / <span class="sub">Mã hành trình</span>: <span class="no">169588</span></div>
+        <div class="confirmation">Itinerary / <span class="sub">Mã hành trình</span>: <span class="no" th:text="${itineraryNo}">${itineraryNo}</span></div>
         <table cellspacing="1" cellpadding="1">
             <tr>
                 <td class="label1">Tour guider/Leader <div class="sub">Họ và Tên Trưởng nhóm</div></td>
                 <td class="text1"><div th:text="${tourGuide}">${tourGuide}</div></td>
                 <td class="label1">Arrival Date <div class="sub">Ngày đến</div></td>
-                <td class="text1"><div>Wed, 03/06/19</div></td>
+                <td class="text1"><div th:text="${arrivalDate}">${arrivalDate}</div></td>
             </tr>
             <tr>
                 <td class="label1">Contact No <div class="sub">Số điện thoại</div></td>
-                <td class="text1"><div>0234 976 893</div></td>
+                <td class="text1"><div th:text="${contactNo}">${contactNo}</div></td>
                 <td class="label1">Departure Date <div class="sub">Ngày đi</div></td>
-                <td class="text1"><div>Fri, 05/06/19</div></td>
+                <td class="text1"><div th:text="${departureDate}">${departureDate}</div></td>
             </tr>
             <tr>
                 <td class="label1">Email Address <div class="sub">Địa chỉ mail</div></td>
-                <td class="text1"><div>william.robert@gmail.com</div></td>
+                <td class="text1"><div th:text="${email}">${email}</div></td>
                 <td class="label1">ETA <div class="sub">Giờ đến dự kiến</div></td>
-                <td class="text1"><div>14:00</div></td>
+                <td class="text1"><div></div></td>
             </tr>
             <tr>
                 <td class="label1">Comnpany/TA <div class="sub">Công ty</div></td>
-                <td class="text1"><div>Cổ Phần Sài Gòn Land</div></td>
+                <td class="text1"><div th:text="${company}">${company}</div></td>
                 <td class="label1">No. of Room<div class="sub">Số lượng phòng</div></td>
-                <td class="text1"><div>3</div></td>
+                <td class="text1"><div th:text="${numOfRoom}">${numOfRoom}</div></td>
             </tr>
             <tr>
                 <td class="label1">Package<div class="sub">Giá phòng</div></td>
-                <td class="text1"><div>TA1-FB</div></td>
+                <td class="text1"><div th:text="${packageName}">${packageName}</div></td>
                 <td class="label1">Total Room Type<div class="sub">Tổng số phòng theo loại</div></td>
-                <td class="text1"><div>3 - KDNH</div></td>
+                <td class="text1"><div th:text="${totalRoomType}">${totalRoomType}</div></td>
             </tr>
         </table>
         <table class="report" cellpadding="0" cellspacing="0">

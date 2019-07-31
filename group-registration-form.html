@@ -223,13 +223,13 @@
         </tr>
         <tr th:each="i : ${#numbers.sequence( 0, #lists.size(rooms), 2)}">
             <td th:text="${i}"></td>
-            <td th:text="${rooms[i].roomType}">${room?.roomType}</td>
-            <td th:text="${rooms[i].roomNum}">${room?.roomNum}</td>
-            <td th:text="${rooms[i].specialRequest}">${room?.specialRequest}</td>
+            <td th:text="${rooms[i]?.roomType}">${room?.roomType}</td>
+            <td th:text="${rooms[i]?.roomNum}">${room?.roomNum}</td>
+            <td th:text="${rooms[i]?.specialRequest}">${room?.specialRequest}</td>
             <td th:text="${i+1}"></td>
-            <td th:text="${rooms[i+1].roomType}"></td>
-            <td th:text="${rooms[i+1].roomNum}"></td>
-            <td th:text="${rooms[i+1].specialRequest}"></td>
+            <td th:text="${rooms[i+1]?.roomType}"></td>
+            <td th:text="${rooms[i+1]?.roomNum}"></td>
+            <td th:text="${rooms[i+1]?.specialRequest}"></td>
         </tr>
     </table>
     <div class="checkbox">

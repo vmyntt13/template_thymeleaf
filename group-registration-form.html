@@ -216,7 +216,7 @@
             <td th:text="${rooms[i]?.roomType}">${room?.roomType}</td>
             <td th:text="${rooms[i]?.roomNum}">${room?.roomNum}</td>
             <td th:text="${rooms[i]?.specialRequest}">${room?.specialRequest}</td>
-            <div th:if="(${i} == #lists.size(rooms))">
+            <div th:if="(${i} < #lists.size(rooms)-1)">
                 <td th:text="${i+1}"></td>
                 <td th:text="${rooms[i+1]?.roomType}"></td>
                 <td th:text="${rooms[i+1]?.roomNum}"></td>

@@ -211,15 +211,19 @@
             <th class="room">Room</th>
             <th>Special Request</th>
         </tr>
-        <tr th:each="room: ${rooms}">
-            <td>1</td>
-            <td th:text="${room?.roomType}" />
-            <td th:text="${room?.roomNum}" />
-            <td th:text="${room?.specialRequest}" />
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr>
+            <div th:each="room: ${roomsLeftCol}">
+                <td th:text="${room?.no}">"${room?.no}</td>
+                <td th:text="${room?.roomType}">"${room?.no}</td>
+                <td th:text="${room?.roomNum}">"${room?.no}</td>
+                <td th:text="${room?.specialRequest}">"${room?.no}</td>
+            </div>
+            <div th:each="room: ${roomsRightCol}">
+                <td th:text="${room?.no}">"${room?.no}</td>
+                <td th:text="${room?.roomType}">"${room?.no}</td>
+                <td th:text="${room?.roomNum}">"${room?.no}</td>
+                <td th:text="${room?.specialRequest}">"${room?.no}</td>
+            </div>
         </tr>
     </table>
     <div class="checkbox">
@@ -247,5 +251,9 @@
         <span class="border"></span>
     </div>
 </div>
+
+<option th:each="i : ${#numbers.sequence( 1, 100)}"
+        th:value="${ (new org.joda.time.DateTime()).getYear() - i }"
+        th:text="${ (new org.joda.time.DateTime()).getYear() - i }">1</option>
 </body>
 </html>

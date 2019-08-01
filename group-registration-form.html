@@ -107,7 +107,7 @@
             border-right: dashed 1px #dad6d6;
         }
         table.report th.no {
-            width: 6;
+            width: 6%;
             text-align: center;
         }
         table.report th.rtype {
@@ -116,6 +116,10 @@
         }
         table.report th.room {
             width: 8%;
+            text-align: center;
+        }
+        table.report th.special-request {
+            width: 26%;
             text-align: center;
         }
         table.report td {
@@ -180,11 +184,11 @@
             <th class="no">No.</th>
             <th class="rtype">R.Type</th>
             <th class="room">Room</th>
-            <th>Special Request</th>
+            <th class="special-request">Special Request</th>
             <th class="no">No.</th>
             <th class="rtype">R.Type</th>
             <th class="room">Room</th>
-            <th>Special Request</th>
+            <th class="special-request">Special Request</th>
         </tr>
         <tr th:each="roomRow: ${roomRows}">
             <td th:text="${roomRow?.no1}">${roomRow?.no1}</td>

@@ -84,8 +84,11 @@
             font-size: 14px;
             color: #919699;
         }
+        td.signature img {
+            max-width: 300px;
+        }
         .date {
-            margin-top: 150px;
+            margin-top: 10px;
             margin-bottom: 50px;
         }
         .date .border {
@@ -212,6 +215,11 @@
             <td class="sign2">Chữ ký của khách</td>
             <td class="sign2">Lễ tân</td>
             <td class="sign2">Giám sát</td>
+        </tr>
+        <tr>
+            <td class="signature"><img th:src="${srcSignatureImg}"/></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
     <div class="date">

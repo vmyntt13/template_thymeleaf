@@ -145,7 +145,7 @@
             </tr>
             <tr>
                 <td class="label1">ID No. <div class="sub">Số thẻ</div></td>
-                <td class="text1"><div></div></td>
+                <td class="text1"><div th:text="${idCard}">${idCard}</div></td>
                 <td class="label1">Room No. <div class="sub">Số phòng</div></td>
                 <td class="text1"><div th:text="${roomNumber}">${roomNumber}</div></td>
             </tr>
@@ -157,13 +157,13 @@
             </tr>
             <tr>
                 <td class="label1">Email Address <div class="sub">Địa chỉ mail</div></td>
-                <td class="text1"><div>anh.pham@gmail.com</div></td>
+                <td class="text1"><div th:text="${company}">${company}</div></td>
                 <td class="label1">Package<div class="sub">Giá phòng</div></td>
-                <td class="text1"><div>TA1-FB</div></td>
+                <td class="text1" th:text="${packageName}"><div>${packageName}</div></td>
             </tr>
             <tr>
                 <td class="label1">Comnpany/TA <div class="sub">Công ty</div></td>
-                <td class="text1"><div>HMS</div></td>
+                <td class="text1"><div th:text="${company}">${company}</div></td>
                 <td class="label1">No. of guest<div class="sub">Số lượng khách</div></td>
                 <td class="text1"><div th:text="${numberOfGuests}">${numberOfGuests}</div></td>
             </tr>

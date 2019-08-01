@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GUEST REGISTRATION FORM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      img.logo {
+          height: 150px;
+      }
+      
+      h1 {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 0px;
+        font-size: 36px;
+        color: #4e4e4e;
+        font-weight: 550;
+      }
+
+      .container {
+        width: 1024px;
+        margin: 0 auto;
+        color: #4e4e4e;
+        font-family: sans-serif;
+      }
+
+      .confirmation {
+        padding-bottom: 20px;
+      }
+
+      span.sub {
+          color: #919699;
+      }
+
+      span.no {
+          color: #333;
+          font-size: 24px;
+          margin-left: 10px;
+      }
+
+      .label1 {
+        width:20%;
+        padding-bottom: 30px;
+      }
+
+      .label1 .sub {
+          padding-top: 5px;
+          font-size: 14px;
+          color: #919699;
+      }
+
+      .text1 {
+        width:30%;
+        padding-bottom: 30px;
+      }
+
+      .text1  div {
+        border-bottom:dashed 1px #dee0e0;
+        margin-right: 40px;
+        padding-bottom: 10px;
+        color: black;
+      }
+
+      table {
+          width: 100%;
+      }
+
+      .note {
+          padding-bottom: 30px;
+          line-height: 28px;
+      }
+
+      .checkbox {
+          margin-top: 20px;
+          padding: 40px 0;
+          border-top: solid 1px #dad6d6;
+          font-weight: 500;
+          display: -webkit-flex;
+          align-items: flex-end
+      }
+      
+      .checkbox div {
+        padding-bottom: 10px
+      }
+
+      input[type=checkbox] {
+        zoom: 2;
+        margin-right: 10px;
+        border: solid 1px red;
+      }
+
+      td.sign {
+          width: 30%;
+      }
+
+      td.sign:first-child {
+        width: 39%;
+        }
+
+      td.sign2 {
+            font-size: 14px;
+            color: #919699;
+      }
+
+      .date {
+          margin-top: 150px;
+          margin-bottom: 50px;
+      }
+
+      .date .border {
+        border-bottom:dashed 1px #dee0e0;
+        height: 20px;
+        margin-left: 10px;
+        padding: 0 100px;
+      }
+
+      
+  </style>
+</head>
+<body>
+    <center><img src="https://github.com/nttramy400/template_thymeleaf/blob/master/logo.png?raw=true" class="logo" /></center>
+    <h1>GUEST REGISTRATION FORM</h1>
+    <div class="container">
+        <div class="confirmation">Confirmation No. / <span class="sub">Mã đặt phòng</span>: <span class="no" th:text="${confirmationNumber}">${confirmationNumber}</span></div>
+        <table cellspacing="1" cellpadding="1">
+            <tr>
+                <td class="label1">Guest Name <div class="sub">Họ và tên khách</div></td>
+                <td class="text1"><div th:text="${fullName}">${fullName}</div></td>
+                <td class="label1">Arrival Date <div class="sub">Ngày đi</div></td>
+                <td class="text1"><div th:text="${arrivalDate}">${arrivalDate}</div></td>
+            </tr>
+            <tr>
+                <td class="label1">Nationality <div class="sub">Quốc tịch</div></td>
+                <td class="text1"><div th:text="${country}">${country}</div></td>
+                <td class="label1">Departure Date <div class="sub">Ngày đến</div></td>
+                <td class="text1"><div th:text="${departureDate}">${departureDate}</div></td>
+            </tr>
+            <tr>
+                <td class="label1">ID Type <div class="sub">Loại thẻ</div></td>
+                <td class="text1"><div></div></td>
+                <td class="label1">ETA <div class="sub">Giờ đến dự kiến</div></td>
+                <td class="text1"><div></div></td>
+            </tr>
+            <tr>
+                <td class="label1">ID No. <div class="sub">Số thẻ</div></td>
+                <td class="text1"><div></div></td>
+                <td class="label1">Room No. <div class="sub">Số phòng</div></td>
+                <td class="text1"><div th:text="${roomNumber}">${roomNumber}</div></td>
+            </tr>
+            <tr>
+                <td class="label1">Contact No <div class="sub">Số điện thoại</div></td>
+                <td class="text1"><div th:text="${phone}">${phone}</div></td>
+                <td class="label1">Room Type<div class="sub">Loại phòng</div></td>
+                <td class="text1"><div th:text="${roomTypeName}">${roomTypeName}</div></td>
+            </tr>
+            <tr>
+                <td class="label1">Email Address <div class="sub">Địa chỉ mail</div></td>
+                <td class="text1"><div>anh.pham@gmail.com</div></td>
+                <td class="label1">Package<div class="sub">Giá phòng</div></td>
+                <td class="text1"><div>TA1-FB</div></td>
+            </tr>
+            <tr>
+                <td class="label1">Comnpany/TA <div class="sub">Công ty</div></td>
+                <td class="text1"><div>HMS</div></td>
+                <td class="label1">No. of guest<div class="sub">Số lượng khách</div></td>
+                <td class="text1"><div th:text="${numberOfGuests}">${numberOfGuests}</div></td>
+            </tr>
+        </table>
+        <div class="checkbox">
+            <input type="checkbox" /> <div>BY CHECKING ON THIS BOX</div>
+        </div>
+        <div class="note">
+            Đồ đạc trong phòng được trang bị theo phong cách hiện đại có những nét riêng của Việt Nam,
+             khung cảnh ngoạn mục từ phòng và ban công riêng. Với một không gian 54m2 rộng rãi, 
+             bạn có thể thức dậy vào lúc mặt trời mọc trên mặt nước lấp lánh và tận hưởng làn gió biển dịu mát.
+        </div>
+        <table>
+            <tr>
+                <td class="sign">Guest Signature</td>
+                <td class="sign">GSA</td>
+                <td class="sign">Checked By</td>
+            </tr>
+            <tr>
+                <td class="sign2">Chữ ký của khách</td>
+                <td class="sign2">Lễ tân</td>
+                <td class="sign2">Giám sát</td>
+            </tr>
+        </table>
+        <div class="date">
+            Date / <span class="sub">Ngày</span>
+            <span class="border"></span>
+        </div>
+    </div>
+</body>
+</html>

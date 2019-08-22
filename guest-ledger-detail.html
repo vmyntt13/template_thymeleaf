@@ -12,6 +12,16 @@
     font-family: 'IBM Plex Sans', sans-serif;
     color: #3E4345;
   }
+  @page  {
+            size: 29.7cm 21cm;
+            @bottom-center {
+                content: 'Page ' counter(page) ' of ' counter(pages);
+            }
+        }
+
+        table { page-break-inside:auto }
+        tr    { page-break-inside:avoid; page-break-after:auto }
+
   .container {
     display: flex;
     flex-direction: column;
